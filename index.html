@@ -1,62 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Mon logiciel de post-processing</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f8f9fa; color: #2c3e50; }
-    h1 { color: #1e3d59; }
-    .version {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .download-btn {
-      display: inline-block;
-      padding: 10px 16px;
-      background: #3498db;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .download-btn:hover { background: #2980b9; }
-    small { color: #666; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostProX - Logiciel de Post-Processing</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS séparé -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Mon logiciel de post-processing</h1>
-  <p>Bienvenue sur la page officielle de téléchargement 👋</p>
+    <header>
+        <h1>PostProX</h1>
+        <p>L'outil de post-processing qui révolutionne tout</p>
+    </header>
 
-  <!-- Version 1.1 -->
-  <div class="version">
-    <h2>📦 Version 1.1</h2>
-    <p><b>Nouveautés :</b></p>
-    <ul>
-      <li>Amélioration du critère VC</li>
-      <li>Correction du bug de chargement des fichiers .binout</li>
-    </ul>
-    <a class="download-btn" href="https://github.com/ayrton-gerard/astra_opensource/releases/download/v0.0.4/ASTRA_v004.rar">
-      ⬇ Télécharger v0.0.4
-    </a>
-    <p><small>Publié le 19 août 2025 – Taille : 120 Mo</small></p>
-  </div>
+    <main>
+        <section class="presentation">
+            <h2>Présentation</h2>
+            <p>Explorez vos données biomécaniques avec une interface ultra moderne et intuitive.</p>
+        </section>
 
-  <!-- Version 1.0 -->
-  <div class="version">
-    <h2>📦 Version 1.0</h2>
-    <p><b>Nouveautés :</b></p>
-    <ul>
-      <li>Première version publique</li>
-      <li>Support des fichiers NODOUT et RCFORC</li>
-    </ul>
-    <a class="download-btn" href="https://github.com/tonpseudo/monlogiciel/releases/download/v1.0/MonLogiciel_v1.0.rar">
-      ⬇ Télécharger v1.0
-    </a>
-    <p><small>Publié le 1er août 2025 – Taille : 105 Mo</small></p>
-  </div>
+        <section class="download">
+            <h2>Téléchargements</h2>
+            <a class="download-btn" href="https://github.com/ayrton-gerard/astra_opensource/releases/download/v0.0.4/ASTRA_v004.rar" target="_blank">
+                Télécharger la dernière version (v0.0.4 Windows)
+            </a>
+        </section>
 
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Pour toute question, envoyez un email à <a href="mailto:ayrton.gerard@gmail.com">ayrton.gerard@gmail.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Ayrton Gerard. Tous droits réservés.
+    </footer>
 </body>
 </html>
