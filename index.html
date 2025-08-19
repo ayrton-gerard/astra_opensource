@@ -5,44 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.S.T.R.A.</title>
 
-    <!-- Favicon -->
-     <link rel="shortcut icon" type="image/png" href="favicon.png?">
-
-    <!-- CSS séparé -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0;}
+        header { background: #1a1a1a; color: white; padding: 20px; text-align:center;}
+        nav { background:#333; padding:10px; text-align:center;}
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+        nav a:hover { text-decoration:underline;}
+        section { padding:40px 20px; max-width:800px; margin:auto;}
+        .download-btn { display:inline-block; padding:10px 20px; background:#007bff; color:white; text-decoration:none; border-radius:5px;}
+        .download-btn:hover { background:#0056b3;}
+        footer { text-align:center; padding:20px; background:#f1f1f1; }
+        form input, form textarea { width:100%; padding:10px; margin:5px 0; border-radius:5px; border:1px solid #ccc; }
+        form button { padding:10px 20px; background:#28a745; color:white; border:none; border-radius:5px; cursor:pointer;}
+        form button:hover { background:#218838; }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>A.S.T.R.A. - Adaptive Software for Trauma Risk Analysis</h1>
         <p>L'outil de post-processing qui révolutionne tout</p>
     </header>
 
+    <nav>
+        <a href="#demo">Démo</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#download">Téléchargements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <main>
-        <section class="demo">
+        <section id="demo" class="demo">
           <h2>Démo</h2>
           <p>Découvrez ASTRA en action :</p>
           <img src="demo.gif" alt="Animation ASTRA" style="max-width:500px; height:auto;">
         </section>
-        <section class="presentation">
+
+        <section id="presentation" class="presentation">
             <h2>Présentation</h2>
             <p>Explorez vos données biomécaniques avec une interface ultra moderne et intuitive.</p>
         </section>
 
-        <section class="download">
+        <section id="download" class="download">
             <h2>Téléchargements</h2>
             <a class="download-btn" href="https://github.com/ayrton-gerard/astra_opensource/releases/download/v0.0.4/ASTRA_v004.rar" target="_blank">
                 Télécharger la dernière version (v0.0.4 Windows)
             </a>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>Pour toute question, envoyez un email à <a href="mailto:ayrton.gerard@gmail.com">ayrton.gerard@gmail.com</a></p>
+            <p>Pour toute question, remplissez le formulaire ci-dessous :</p>
+            <form action="send_mail.php" method="POST">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
     <footer>
         &copy; 2025 Ayrton Gerard. Tous droits réservés.
     </footer>
+
 </body>
 </html>
